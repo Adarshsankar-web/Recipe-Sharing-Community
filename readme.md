@@ -1,0 +1,1 @@
+A MERN stack social recipe sharing platform with user authentication, recipe management, search, ratings, and image uploads.
