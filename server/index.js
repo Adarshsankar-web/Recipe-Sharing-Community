@@ -1,5 +1,14 @@
 const express = require("express");
+require("dotenv").config();
+const connectDB =require("./config/db");
+const recipeRoutes = require("./routes/recipeRoutes");
+
+
 const app = express();
+
+connectDB();
+app.use(express.json());
+app.use("/recipes", recipeRoutes);
 
 app.get("/", (req, res) => {
     res.json({
@@ -9,12 +18,6 @@ app.get("/", (req, res) => {
     });
 });
 
-app.get("/recipes", (req, res) => {
-    res.send("All Recipes");
-});
-app.post("/recipes", (req, res) => {
-    res.send("Recipe Added");
-});
 
 app.listen(5000, () => {
     console.log("Server is running on port 5000");
