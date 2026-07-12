@@ -2,12 +2,13 @@ const express = require("express");
 require("dotenv").config();
 const connectDB =require("./config/db");
 const recipeRoutes = require("./routes/recipeRoutes");
-
+const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
 connectDB();
 app.use(express.json());
+app.use("/api/auth", authRoutes);
 app.use("/recipes", recipeRoutes);
 
 app.get("/", (req, res) => {
