@@ -8,6 +8,7 @@ const upload = require("../middleware/uploadMiddleware");
 const { 
     getRecipes,
     getRecipeById,
+    getMyRecipes,
     addRecipe,
     updateRecipe,
     deleteRecipe
@@ -15,6 +16,7 @@ const {
 } = require("../controllers/recipeController");
     
 router.get("/", getRecipes);
+router.get("/my", protect, getMyRecipes);
 router.get("/:id", getRecipeById);
 router.post("/", protect, upload.single("image"), addRecipe);
 router.put("/:id", protect, updateRecipe);
