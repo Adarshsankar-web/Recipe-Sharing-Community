@@ -1,0 +1,39 @@
+.footer{
+
+    margin-top:60px;
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+}
+
+.footer h3{
+
+    color:#ff6b35;
+
+    margin-bottom:10px;
+
+    font-size:28px;
+}
+
+.footer p{
+
+    color:#ccc;
+
+    margin:8px 0;
+
+    font-size:16px;
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    color:#888;
+
+    font-size:14px;
+}
