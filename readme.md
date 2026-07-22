@@ -16,7 +16,7 @@ A full-stack MERN web application that allows users to share, manage, and explor
 - Loading Spinner
 - Beautiful Modern Design
 
-## 🛠 Tech Stack
+##  Tech Stack
 ### Frontend
 - React.js
 - React Router DOM
@@ -72,14 +72,14 @@ node index.js
 ```
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 Create a `.env` file inside the server folder.
 ```
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
 ```
 ## Author
-**Adarsh Sankar**
+Adarsh Sankar
 B.Tech Computer Science Engineering
 
 ## License
